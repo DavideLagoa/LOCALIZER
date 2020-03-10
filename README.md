@@ -21,3 +21,16 @@ Alternatively, you can install LOCALIZER on your machine to run it locally.
 For detailed installation instructions see here: http://localizer.csiro.au/software.html
 
 For help on how to interpret the output format, see http://localizer.csiro.au/output.html
+
+#### Davide Lagoa edit below ####
+
+#### Build docker image 
+docker build --rm -f Dockerfile -t localizer_docker .
+
+#### Run docker container
+docker run --rm -it localizer_docker
+
+#### Command example (LOCALIZER uses python v2)
+python2.7 LOCALIZER.py -e -i Effector_Testing.fasta
+
+
